@@ -27,6 +27,16 @@
 
         <div class="gh-content gh-canvas">
             {{content}}
+
+            {{#if @site.donations_enabled}}
+                {{#unless @member.paid}}
+                    <div class="tip-prompt">
+                        <p class="tip-prompt-title">Enjoyed this post?</p>
+                        <p class="tip-prompt-text">If so, please consider buying me a chilled pint to sip while writing the next one!</p>
+                        <a class="gh-btn gh-primary-btn tip-prompt-link" href="/#/portal/support">Gift a pint</a>
+                    </div>
+                {{/unless}}
+            {{/if}}
         </div>
 
         {{#if comments}}

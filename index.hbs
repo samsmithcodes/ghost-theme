@@ -92,18 +92,18 @@
                         {{^if @member.paid}}
                             <div class="gh-signup">
                                 {{^if @member}}
-                                    <p class="gh-signup-description">Sign up now to get access to the library of members-only posts.</p>
+                                    <p class="gh-signup-description">Sign up now to get post notifications and access to any member only content.</p>
 
                                     <a class="gh-subscribe-input" href="#/portal/signup" data-portal="signup">
                                         <div class="gh-subscribe-input-text">
                                             {{> icons/email}}
-                                            jamie@example.com
+                                            someone@example.com
                                         </div>
                                         <div class="gh-subscribe-input-btn">Subscribe</div>
                                     </a>
                                 {{else}}
                                     {{#if @setting.paid_members_enabled}}
-                                        <p class="gh-signup-description">Upgrade to a paid account to get full access.</p>
+                                        <p class="gh-signup-description">Writing posts takes time, show your support with a paid account.</p>
                                         <a class="gh-signup-btn gh-btn gh-primary-btn" href="#/portal/account/plans" data-portal="account/plans">Upgrade now</a>
                                     {{/if}}
                                 {{/if}}

@@ -1,0 +1,19 @@
+.tip-prompt {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.tip-prompt-title {
+    font-size: 32px;
+}
+
+.tip-prompt-text {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.tip-prompt-link {
+    color: white !important;
+    text-decoration: none !important;
+}
